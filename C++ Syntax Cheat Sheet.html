@@ -1,0 +1,2059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  @font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAZwABAAAAAACFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEU0lHAAAGaAAAAAgAAAAIAAAAAUdTVUIAAAZcAAAACgAAAAoAAQAAT1MvMgAAAyQAAABJAAAAYFYEU3RjbWFwAAADcAAAAEUAAACAAJThvmN2dCAAAATkAAAABAAAAAQAAAAAZnBnbQAAA7gAAACyAAABCUM+8IhnYXNwAAAGTAAAABAAAAAQABoAI2dseWYAAAFsAAABPAAAAZwcEq9taGVhZAAAAsgAAAA0AAAANgh4a91oaGVhAAADCAAAABoAAAAkCA8DRGhtdHgAAAL8AAAADAAAAAwGAACfbG9jYQAAAsAAAAAIAAAACABiATBtYXhwAAACqAAAABgAAAAgAA8ASm5hbWUAAAToAAABQgAAAlXu73sOcG9zdAAABiwAAAAeAAAAME3QpOBwcmVwAAAEbAAAAHYAAAB/aFGpk3jaTY6xa8JAGMW/O62BDi0tJLYQincXEypYIiGJjSgHniQ6umTsUEyLm5BV6NDBP8Tpts6F0v+k/0an2i+itHDw3v2+9+DBKTzsJNnWJNTgHEy4BgG3EMI9DCEDOGEXzDADU5hBKMIgNPZqoD3SilVaXZCER3/I7AtxEJLtzzuZfI+VVkprxTlXShWKb3TBecG11rwoNlmmn1P2WYcJczl32etSpKnziC7lQyWe1smVPy/Lt7Kc+0vWY/gAgIIEqAN9we0pwKXreiMasxvabDQMM4riO+qxM2ogwDGOZTXxwxDiycQIcoYFBLj5K3EIaSctAq2kTYiw+ymhce7vwM9jSqO8JyVd5RH9gyTt2+J/yUmYlIR0s04n6+7Vm1ozezUeLEaUjhaDSuXHwVRgvLJn1tQ7xiuVv/ocTRF42mNgZGBgYGbwZOBiAAFGJBIMAAizAFoAAABiAGIAznjaY2BkYGAA4in8zwXi+W2+MjCzMIDApSwvXzC97Z4Ig8N/BxYGZgcgl52BCSQKAA3jCV8CAABfAAAAAAQAAEB42mNgZGBg4f3vACQZQABIMjKgAmYAKEgBXgAAeNpjYGY6wTiBgZWBg2kmUxoDA4MPhGZMYzBi1AHygVLYQUCaawqDA4PChxhmh/8ODDEsvAwHgMKMIDnGL0x7gJQCAwMAJd4MFwAAAHjaY2BgYGaA4DAGRgYQkAHyGMF8NgYrIM3JIAGVYYDT+AEjAwuDFpBmA9KMDEwMCh9i/v8H8sH0/4dQc1iAmAkALaUKLgAAAHjaTY9LDsIgEIbtgqHUPpDi3gPoBVyRTmTddOmqTXThEXqrob2gQ1FjwpDvfwCBdmdXC5AVKFu3e5MfNFJ29KTQT48Ob9/lqYwOGZxeUelN2U2R6+cArgtCJpauW7UQBqnFkUsjAY/kOU1cP+DAgvxwn1chZDwUbd6CFimGXwzwF6tPbFIcjEl+vvmM/byA48e6tWrKArm4ZJlCbdsrxksL1AwWn/yBSJKpYbq8AXaaTb8AAHja28jAwOC00ZrBeQNDQOWO//sdBBgYGRiYWYAEELEwMTE4uzo5Zzo5b2BxdnFOcALxNjA6b2ByTswC8jYwg0VlNuoCTWAMqNzMzsoK1rEhNqByEyerg5PMJlYuVueETKcd/89uBpnpvIEVomeHLoMsAAe1Id4AAAAAAAB42oWQT07CQBTGv0JBhagk7HQzKxca2sJCE1hDt4QF+9JOS0nbaaYDCQfwCJ7Au3AHj+LO13FMmm6cl7785vven0kBjHCBhfpYuNa5Ph1c0e2Xu3jEvWG7UdPDLZ4N92nOm+EBXuAbHmIMSRMs+4aUEd4Nd3CHD8NdvOLTsA2GL8M9PODbcL+hD7C1xoaHeLJSEao0FEW14ckxC+TU8TxvsY6X0eLPmRhry2WVioLpkrbp84LLQPGI7c6sOiUzpWIWS5GzlSgUzzLBSikOPFTOXqly7rqx0Z1Q5BAIoZBSFihQYQOOBEdkCOgXTOHA07HAGjGWiIjaPZNW13/+lm6S9FT7rLHFJ6fQbkATOG1j2OFMucKJJsxIVfQORl+9Jyda6Sl1dUYhSCm1dyClfoeDve4qMYdLEbfqHf3O/AdDumsjAAB42mNgYoAAZQYjBmyAGYQZmdhL8zLdDEydARfoAqIAAAABAAMABwAKABMAB///AA8AAQAAAAAAAAAAAAAAAAABAAAAAA==) format('woff');
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b31d28;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2 {
+  background-color: #d73a49;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #22863a;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #005cc5;
+  font-weight: 700;
+}
+
+.markdown-body .pl-mi {
+  color: #24292e;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #24292e;
+  font-weight: 700;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffeef0;
+  color: #b31d28;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #f0fff4;
+  color: #22863a;
+}
+
+.markdown-body .pl-mc {
+  background-color: #ffebda;
+  color: #e36209;
+}
+
+.markdown-body .pl-mi2 {
+  background-color: #005cc5;
+  color: #f6f8fa;
+}
+
+.markdown-body .pl-mdr {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  color: #032f62;
+  text-decoration: underline;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.markdown-body hr:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body hr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-bottom: 8px!important;
+  padding-top: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.markdown-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  height: .25em;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  color: #6a737d;
+  font-size: .85em;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.markdown-body dl dd {
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.markdown-body table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+}
+
+.markdown-body .commit-tease-sha {
+  color: #444d56;
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 90%;
+}
+
+.markdown-body .blob-wrapper {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  color: rgba(27,31,35,.3);
+  cursor: pointer;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  color: #24292e;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  overflow: visible;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  background: #ffea7f;
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  border-color: #0366d6;
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+
+  </style>
+  <style>
+  /**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #9a6e3a;
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function,
+.token.class-name {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+  </style>
+  <style>
+  
+  </style>
+  <style>
+    .markdown-body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+
+    @media not print {
+      .markdown-body {
+        padding: 45px;
+      }
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    }
+
+    .hf-container {
+      color: #24292e;
+      line-height: 1.3;
+    }
+
+    .markdown-body .highlight pre,
+    .markdown-body pre {
+      white-space: pre-wrap;
+    }
+    .markdown-body table {
+      display: table;
+    }
+    .markdown-body img[data-align="center"] {
+      display: block;
+      margin: 0 auto;
+    }
+    .markdown-body img[data-align="right"] {
+      display: block;
+      margin: 0 0 0 auto;
+    }
+    .markdown-body li.task-list-item {
+      list-style-type: none;
+    }
+    .markdown-body li > [type=checkbox] {
+      margin: 0 0 0 -1.3em;
+    }
+    .markdown-body input[type="checkbox"] ~ p {
+      margin-top: 0;
+      display: inline-block;
+    }
+    .markdown-body ol ol,
+    .markdown-body ul ol {
+      list-style-type: decimal;
+    }
+    .markdown-body ol ol ol,
+    .markdown-body ol ul ol,
+    .markdown-body ul ol ol,
+    .markdown-body ul ul ol {
+      list-style-type: decimal;
+    }
+  </style>
+  <style>.markdown-body a.footnote-ref {
+  text-decoration: none;
+}
+
+.footnotes {
+  font-size: .85em;
+  opacity: .8;
+}
+
+.footnotes li[role="doc-endnote"] {
+  position: relative;
+}
+
+.footnotes .footnote-back {
+  position: absolute;
+  font-family: initial;
+  top: .2em;
+  right: 1em;
+  text-decoration: none;
+}
+
+.inline-math.invalid,
+.multiple-math.invalid {
+  color: rgb(255, 105, 105);
+}
+</style>
+  <style>.markdown-body{}pre.front-matter{display:none!important;}</style>
+</head>
+<body>
+  <article class="markdown-body"><h1 class="atx" id="c-syntax-cheat-sheet">C++ Syntax Cheat Sheet</h1>
+<h2 class="atx" id="preface">Preface</h2>
+<p>Since the C++ language varies so heavily between versions (e.g. C++0x, C++11, C++17, etc.), I will preface this cheat sheet by saying that the majority of the examples here target C++0x or c++11, as those are the versions that I am most familiar with. I come from the aerospace industry (embedded flight software) in which we purposefully don't use the latest technologies for safety reasons, so most of the code I write is in C++0x and sometimes C++11. Nevertheless, the basic concepts of C++ and object oriented programming still generally apply to both past and future versions of the language.</p>
+<h2 class="atx" id="table-of-contents">Table of Contents</h2>
+
+
+<ul>
+<li><a href="#c-syntax-cheat-sheet">C++ Syntax Cheat Sheet</a><ul>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#10-c-classes">1.0 C++ Classes</a><ul>
+<li><a href="#11-class-syntax">1.1 Class Syntax</a><ul>
+<li><a href="#111-class-declaration-h-file">1.1.1 Class Declaration (<code>.h</code> file)</a></li>
+<li><a href="#112-class-definition-cpp-file">1.1.2 Class Definition (<code>.cpp</code> file)</a></li>
+<li><a href="#113-class-utilization-another-cpp-file">1.1.3 Class Utilization (Another <code>.cpp</code> file)</a></li>
+<li><a href="#114-getters-and-setters">1.1.4 Getters and Setters</a></li>
+</ul>
+</li>
+<li><a href="#12-inheritance">1.2 Inheritance</a><ul>
+<li><a href="#121-rectangle-declaration-h-file">1.2.1 <code>Rectangle</code> Declaration (<code>.h</code> file)</a></li>
+<li><a href="#122-rectangle-definition-cpp-file">1.2.2 <code>Rectangle</code> Definition (<code>.cpp</code> file)</a></li>
+<li><a href="#123-rectangle-utilization-another-cpp-file">1.2.3 <code>Rectangle</code> Utilization (Another <code>.cpp</code> file)</a></li>
+</ul>
+</li>
+<li><a href="#13-class-polymorphism">1.3 Class Polymorphism</a><ul>
+<li><a href="#131-motivation">1.3.1 Motivation</a></li>
+<li><a href="#132-virtual-methods">1.3.2 Virtual Methods</a></li>
+</ul>
+</li>
+<li><a href="#14-special-methods">1.4 Special Methods (Constructor, Destructor, ...)</a><ul>
+<li><a href="#141-constructor-and-destructor">1.4.1 Constructor and Destructor</a><ul>
+<li><a href="#1411-use-of-explicit-in-constructors">1.4.1.1 Use of <code>explicit</code> in Constructors</a></li>
+<li><a href="#1412-member-initializer-list">1.4.1.2 Member Initializer List</a></li>
+</ul>
+</li>
+<li><a href="#142-new-and-delete">1.4.2. <code>new</code> and <code>delete</code></a></li>
+<li><a href="#143-copy-constructor-and-copy-assignment">1.4.3. Copy Constructor and Copy Assignment</a></li>
+<li><a href="#144-move-constructor-and-move-assignment">1.4.4. Move Constructor and Move Assignment</a></li>
+</ul>
+</li>
+<li><a href="#15-operator-overloading">1.5 Operator Overloading</a></li>
+<li><a href="#16-templates">1.6 Templates</a></li>
+</ul>
+</li>
+<li><a href="#20-general-c-syntax">2.0 General C++ Syntax</a><ul>
+<li><a href="#21-namespaces">2.1 Namespaces</a></li>
+<li><a href="#22-references-and-pointers">2.2 References/Pointers</a></li>
+<li><a href="#23-keywords">2.3 Keywords</a><ul>
+<li><a href="#231-general-keywords">2.3.1 General keywords</a></li>
+<li><a href="#232-storage-class-specifiers">2.3.2 Storage class specifiers</a></li>
+<li><a href="#233-const-and-dynamic-cast-conversion">2.3.3  <code>const</code> and <code>dynamic</code> Cast Conversion</a></li>
+</ul>
+</li>
+<li><a href="#24-preprocessor-tokens">2.4 Preprocessor Tokens</a></li>
+<li><a href="#25-strings-stdstring">2.5 Strings </a></li>
+<li><a href="#26-iterators-stditerator">2.6 Iterators</a></li>
+<li><a href="#27-exceptions">2.7 Exceptions</a></li>
+<li><a href="#28-lambdas">2.8 Lambdas</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<h2 class="atx" id="10-c-classes">1.0 C++ Classes</h2>
+<h3 class="atx" id="11-class-syntax">1.1 Class Syntax</h3>
+<h4 class="atx" id="111-class-declaration-h-file">1.1.1 Class Declaration (<code>.h</code> file)</h4>
+<p>Here's a simple class representing a polygon, a shape with any number of sides.</p>
+<p>The class <em>declaration</em> typically goes in the header file, which has the extension <code>.h</code> (or, less commonly, <code>.hpp</code> to distinguish from C headers). The <em>declaration</em> gives the class name, any classes it may extend, declares the members and methods, and declares which members/methods are public, private, or protected. You can think of the declaration as sort of saying: "there will be a thing and here's how it will look like". The declaration is used to inform the compiler about the future essence and use of a particular symbol.</p>
+<pre><code class="fenced-code-block language-c++">// File: polygon.h
+
+#include &lt;string&gt;
+
+class Polygon {
+
+// Private members and methods are only accessible via methods in the class definition
+private:
+    int num_sides;        // Number of sides
+
+// Protected members and methods are only accessible in the class definition or by classes who extend this class
+protected:
+    std::string name;   // Name of the polygon
+
+// Public members and methods are accessible to anyone who creates an instance of the class
+public:
+    // Constructors
+    Polygon(const int num_sides, const std::string &amp; name); // &lt;--- This constructor takes the number of sides and name as arguments
+
+    // Getters and Setters
+    int GetNumSides(void) const;
+    void SetNumSides(const int num_sides);
+
+    std::string &amp; GetName(void) const;
+    void SetName(const std::string &amp; name);
+
+}; // &lt;--- Don't forget the semicolon!</code></pre>
+<h4 class="atx" id="112-class-definition-cpp-file">1.1.2 Class Definition (<code>.cpp</code> file)</h4>
+<p>The class <em>definition</em> typically goes in the <code>.cpp</code> file. The <em>definition</em> extends the declaration by providing an actual implementation of whatever it is that you're building. Continuing the example from the declaration, the definition can be thought of as saying: "Right, that thing I told you briefly about earlier? Here's how it actually functions". The definition thus provides the compileable implementation.</p>
+<pre><code class="fenced-code-block language-c++">// File: polygon.cpp
+
+#include &lt;string&gt;    // &lt;--- Required for std::string
+
+#include "polygon.h"    // &lt;--- Obtains the class declaration
+
+// Constructor
+// You must scope the method definitions with the class name (Polygon::)
+// Also, see the section on the 'explicit' keyword for a warning about constructors with exactly one argument
+Polygon::Polygon(const int num_sides, const std::string &amp; name) {
+    this-&gt;num_sides = num_sides;    // 'this' is a pointer to the instance of the class. Members are accessed via the -&gt; operator
+    this-&gt;name = name;            // In this case you need to use 'this-&gt;...' to avoid shadowing the member variable since the argument shares the same name
+}
+
+// Get the number of sides
+int Polygon::GetNumSides(void) const {    // The 'const' here tells the compiler that you guarantee that you won't modify the object when this function is called. This allows it to perform optimizations that it otherwise may not be able to do
+    return this-&gt;num_sides;
+}
+
+// Set the number of sides
+void Polygon::SetNumSides(const int num_sides) {
+    this-&gt;num_sides = num_sides;
+}
+
+// Get the polygon name
+std::string &amp; Polygon::GetName(void) const {
+    return this-&gt;name;
+}
+
+// Set the polygon name
+void Polygon::SetName(const std::string &amp; name) {
+    this-&gt;name = name;
+}</code></pre>
+<p>The getters and setters here don't do much, but you could imagine limiting the number of sides such that it must have at least 3 sides to be a useful polygon, in which case you could enforce that in <code>Polygon::SetNumSides()</code>. Of course, you'd also need to modify the constructor, which could then call <code>SetNumSides()</code> instead of setting the variable directly.</p>
+<blockquote>
+<p>NOTE: Regarding the use of <code>this-&gt;</code> in a class definition, there are places where it's strictly necessary for readability, e.g. when your method parameter shares the exact same name as a member variable, you use <code>this-&gt;</code> to avoid what's called shadowing. However, some prefer to always use <code>this-&gt;</code> explicitly regardless of whether it's necessary.</p>
+</blockquote>
+<h4 class="atx" id="113-class-utilization-another-cpp-file">1.1.3 Class Utilization (Another <code>.cpp</code> file)</h4>
+<pre><code class="fenced-code-block language-c++">// File: main.cpp
+
+#include &lt;string&gt;
+#include &lt;iostream&gt;
+
+#include "Polygon.h"    // &lt;--- Obtains the class declaration
+
+int main(int argc, char * argv[]) {
+    // Create a polygon with 4 sides and the name "Rectangle"
+    Polygon polygon = Polygon(4, "Rectangle");
+
+    // Check number of sides -- Prints "Rectangle has 4 sides"
+    std::cout &lt;&lt; polygon.GetName() &lt;&lt; " has " &lt;&lt; polygon.GetNumSides() &lt;&lt; " sides"&lt;&lt; std::endl;
+
+    // Change number of sides to 3 and rename to "Triangle"
+    polygon.SetNumSides(3);
+    polygon.SetName("Triangle");
+}</code></pre>
+<h4 class="atx" id="114-getters-and-setters">1.1.4 Getters and Setters</h4>
+<p>A shortcut often used for Getters/Setters is to define them in the class declaration (<code>.h</code>) file as follows:</p>
+<pre><code class="fenced-code-block language-c++">// File: car.h
+
+#include &lt;string&gt;
+
+class Car {
+private:
+    int year;
+    std::string make;
+
+public:
+    int GetYear(void) const { return this-&gt;year; }
+    void SetYear(const int year) { this-&gt;year = year; }
+    std::string &amp; GetMake(void) const { return this-&gt;make; }
+    void SetMake(const std::string &amp; make) { this-&gt;make = make; }
+};</code></pre>
+<p>This is often used for very basic getters and setters, and also for basic constructors. In contrast, you'll nearly always find more complex methods defined in the <code>.cpp</code> file. One exception to this is with class templates, in which the entire templated class declaration and definition must reside in the header file.</p>
+<p>Another important consideration: If you have getters and setters for all of your members, you may want to reconsider the design of your class. Sometimes having getters and setters for every member is indicative of poor planning of the class design and interface. In particular, setters should be used more thoughtfully. Could a variable be set once in the constructor and left constant thereafter? Does it need to be modified at all? Is it set somewhere else in another method, perhaps even indirectly?</p>
+<h3 class="atx" id="12-inheritance">1.2 Inheritance</h3>
+<p>A class can extend another class, meaning that the new class inherits all of the data from the other class, and can also override its methods, add new members, etc. Inheritance is the key feature required for <a href="#13-class-polymorphism">polymorphism</a>.</p>
+<p>It is important to note that this feature is often overused by beginners and sometimes unnecessary hierarchies are created, adding to the overally complexity. There are some good alternatives such as <a href="https://en.wikipedia.org/wiki/Composition_over_inheritance">composition</a> and <a href="https://stackoverflow.com/a/269535">aggregation</a>, although, of course, sometimes inheritance is exactly what is needed.</p>
+<p><strong>Example:</strong> the class <code>Rectangle</code> can inherit from the class <code>Polygon</code>. You would then say that a <code>Rectangle</code> extends from a <code>Polygon</code>, or that class <code>Rectangle</code> is a sub-class of <code>Polygon</code>. In plain English, this means that a <code>Rectangle</code> is a more specialized version of a <code>Polygon</code>. Thus, all rectangles are polygons, but not all polygons are rectangles.</p>
+<h4 class="atx" id="121-rectangle-declaration-h-file">1.2.1 <code>Rectangle</code> Declaration (<code>.h</code> file)</h4>
+<pre><code class="fenced-code-block language-c++">// File: rectangle.h
+
+#include &lt;string&gt;       // &lt;--- Explicitly include the string header, even though polygon.h also includes it
+
+#include "polygon.h"    // &lt;--- You must include the declaration in order to extend the class
+
+// We extend from Polygon by using the colon (:) and specifying which type of inheritance
+// will be used (public inheritance, in this case)
+
+class Rectangle : public Polygon {
+private:
+    int length;
+    int width;
+
+    // &lt;--- NOTE: The member variables 'num_sides' and 'name' are already inherited from Polygon
+    //            it's as if we sort of get them for free, since we are a sub-class
+
+public:
+    // Constructors
+    explicit Rectangle(const std::string &amp;name);
+    Rectangle(const std::string &amp;name, const int length, const int width);
+
+    // Getters and Setters
+    const int GetLength(void) const { return this-&gt;length; }
+    void SetLength(const int) { this-&gt;length = length; }
+
+    const int GetWidth(void) const { return this-&gt;width; }
+    void SetWidth(const int) { this-&gt;width = width; }
+
+    // &lt;--- NOTE: Again, the getters/setters for 'num_sides' and 'name' are already inherited from Polygon
+
+    // Other Methods
+    const int Area(void) const;
+};</code></pre>
+<blockquote>
+<p>NOTE: The inheritance access specifier (<code>public</code>, <code>protected</code>, or <code>private</code>) is used to determine the <a href="https://www.tutorialspoint.com/cplusplus/cpp_inheritance.htm">type of inheritance</a>. If this is omitted then <code>private</code> inheritance is used by default. <strong>Public inheritance is by far the most common type of inheritance</strong>.</p>
+</blockquote>
+<h4 class="atx" id="122-rectangle-definition-cpp-file">1.2.2 <code>Rectangle</code> Definition (<code>.cpp</code> file)</h4>
+<pre><code class="fenced-code-block language-c++">// File: rectangle.cpp
+
+#include "rectangle.h"    // &lt;--- Only need to include 'Rectangle', since 'Polygon' is included in 'rectangle.h'
+
+// This constructor calls the superclass (Polygon) constructor and sets the name and number of sides to '4', and then sets the length and width
+Rectangle::Rectangle(const std::string &amp;name, const int length, const int width) : Polygon(4, name) {
+    this-&gt;length = length;
+    this-&gt;width = width;
+}
+
+// This constructor calls the superclass (Polygon) constructor, but sets the length and width to a constant value
+// The explicit keyword is used to restrict the use of the constructor. See section below for more detail
+explicit Rectangle::Rectangle(const std::string &amp;name) : Polygon(4, name) {
+    this-&gt;length = 1;
+    this-&gt;width = 1;
+}
+
+// Compute the area of the rectangle
+int Rectangle::Area(void) const {
+    return length * width;        // &lt;--- Note that you don't explicitly need 'this-&gt;', you can directly use the member variables
+}</code></pre>
+<h4 class="atx" id="123-rectangle-utilization-another-cpp-file">1.2.3 <code>Rectangle</code> Utilization (Another <code>.cpp</code> file)</h4>
+<pre><code class="fenced-code-block language-c++">// File: main.cpp
+
+#include &lt;iostream&gt;
+
+#include "Rectangle.h"
+
+int main(int argc, char *argv[]) {
+    Rectangle rectangle = Rectangle("Square", 6, 6);
+
+    // Prints "Square has 4 sides, and an area of 36"
+    std::cout &lt;&lt; rectangle.GetName() &lt;&lt; " has " &lt;&lt; rectangle.GetNumSides() &lt;&lt; " sides, and an area of " &lt;&lt; rectangle.Area() &lt;&lt; std::endl;
+}</code></pre>
+<h3 class="atx" id="13-class-polymorphism">1.3 Class Polymorphism</h3>
+<p>Polymorphism describes a system in which a common interface is used to manipulate objects of different types. In essence various classes can inherit from a common interface through which they make certain guarantees about which methods/variables are available for use. By adhering to this common interface, one can use a pointer to an object of the base interface type to call the methods of any number of extending classes. Using polymorphism one can say "I don't care what type this really is; I know it implements <code>Foo()</code> and <code>Bar()</code> because it inherits from this interface", which is a pretty nifty feature.</p>
+<p>The <code>virtual</code> keyword is used to ensure runtime polymorphism for class methods. Additionally, an overriding method can be forced by the compiler by not providing a default implementation in the interface, which is done by setting the method to <code>= 0</code>, as will be shown later.</p>
+<h4 class="atx" id="131-motivation">1.3.1 Motivation</h4>
+<p>Let's consider a similar class hierarchy using shapes as previously discussed. Considering a shape to be any 3 or more sided polygon from which we can compute certain attributes (like the shape's area), let's extend from it to create a rectangle class from which we can set the length/width and a circle class in which you can set the radius. <strong>In both cases, we want to be able to compute the area of the shape.</strong> This is a key observation that we will expand upon later.</p>
+<p>For now, this (poorly implemented) shape class will suffice:</p>
+<pre><code class="fenced-code-block language-c++">// File: shape.h
+
+#include &lt;cmath&gt;     // needed for M_PI constant
+
+class Shape {
+    // We'll leave Shape empty for now... not very interesting yet
+};
+
+class Rectangle : public Shape {
+private:
+    double length;
+    double width;
+
+public:
+    // Constructor using a member initializer list instead of assignment in the method body
+    Rectangle(const double w, const double l) : width(w), length(l) {}
+
+    // Compute the area of a rectangle
+    double Area(void) const {
+        return length * width;
+    }
+};
+
+class Circle : public Shape {
+private:
+    double radius;
+
+public:
+    explicit Circle(double r) : radius(r) {}
+
+    // Compute the area of a circle
+    double Area(void) const {
+        return M_PI * radius * radius;  // pi*r^2
+    }
+};</code></pre>
+<blockquote>
+<p>NOTE: As shown here, you can put multiple classes in a single header, although in practice unless you have a good reason for doing so it's probably best to use a separate header file per class.</p>
+</blockquote>
+<blockquote>
+<p>NOTE: I'm not using default value initialization for member variables (i.e. <code>double length = 0;</code>) and I'm using parentheses <code>()</code> instead of braces <code>{}</code> for the initializer list since older compilers (pre-C++11) may not support the new syntax.</p>
+</blockquote>
+<p>So, we have our two classes, <code>Rectangle</code> and <code>Circle</code>, but in this case inheriting from <code>Shape</code> isn't really buying us anything. To make use of polymorphism we need to pull the common <code>Area()</code> method into the base class as follows, by using virtual methods.</p>
+<h4 class="atx" id="132-virtual-methods">1.3.2 Virtual Methods</h4>
+<p>Imagine you want to have a pointer to a shape with which you want to compute the area of that shape. For example, maybe you want to hold shapes in some sort of data structure, but you don't want to limit yourself to just rectangles or just circles; you want to support all objects that call themselves a 'Shape'. Something like:</p>
+<pre><code class="fenced-code-block language-c++">Rectangle rectangle(2.0, 5.0);
+Circle circle(1.0);
+
+// Point to the rectangle
+Shape * unknown_shape = &amp;rectangle; // Could point to *any* shape, Rectangle, Circle, Triangle, Dodecagon, etc.
+
+unknown_shape-&gt;Area();  // Returns 10.0
+
+// Point to the circle
+unknown_shape = &amp;circle;
+unknown-shape-&gt;Area();  // Returns 3.14...</code></pre>
+<p>The way to achieve this is to use the <code>virtual</code> keyword on the base class methods, which specifies that when a pointer to a base class invokes the method of an object that it points to, it should determine, at runtime, the correct method to invoke. That is, when <code>unknown_shape</code> points to a <code>Rectangle</code> it invokes <code>Rectangle::Area()</code> and if <code>unknown_shape</code> points to a <code>Circle</code> it invokes <code>Circle::Area()</code>.</p>
+<p>Virtual methods are employed as follows:</p>
+<pre><code class="fenced-code-block language-c++">#include &lt;cmath&gt;
+
+class Shape {
+public:
+    // Virtual destructor (VERY IMPORTANT, SEE NOTE BELOW)
+    virtual ~Area() {}
+
+    // Virtual area method
+    virtual double Area() const {
+        return 0.0;
+    }
+};
+
+class Rectangle : public Shape {
+private:
+    double length;
+    double width;
+
+public:
+    Rectangle(double w, double l) : width(w), length(l) {}
+
+    // Override the Shape::Area() method with an implementation specific to Rectangle
+    double Area() const override {
+        return length * width;
+    }
+};
+
+class Circle : public Shape {
+private:
+    double radius;
+
+public:
+    explicit Circle(double t) : radius(r) {}
+
+    // Override the Shape::Area() method with an implementation specific to Circle
+    //
+    // NOTE: there is an 'override' keyword that was introduced in C++11 and is optional: it is used
+    // to enforce that the method is indeed an overriding method of a virtual base method at compile time
+    // and is used as follows:
+    double Area() const override {
+        return M_PI * radius * radius; // pi*r^2
+    }
+};</code></pre>
+<blockquote>
+<p>NOTE: It is very important that a default virtual destructor was included after adding the virtual <code>Area()</code> method to the base class. Whenever a base class includes even a single virtual method, it must include a virtual destructor so that the correct destructor(s) are called in the correct order when the object is eventually deleted.</p>
+</blockquote>
+<p>This is called runtime polymorphism because the decision of which implementation of the <code>Area()</code> method to use is determined during program execution based on the type that the base is pointing at. It is implemented using <a href="https://www.learncpp.com/cpp-tutorial/125-the-virtual-table/">the virtual table</a> mechanism. In a nutshell: it is a little more expensive to use but it can be immensely useful. There is also compile-time polymorphism. Here is more on the <a href="https://www.geeksforgeeks.org/polymorphism-in-c/">differences between them</a>.</p>
+<p>In the example above, if a class extends from <code>Shape</code> but does not include an override of <code>Area()</code> then calling the <code>Area()</code> method will invoke the base class method which (in the implementation above) returns <code>0.0</code>.</p>
+<p>In some cases, you may want to <strong>enforce</strong> that sub-classes implement this method. This is done by not providing a default implementation, thus making it what is called a <em>pure virtual</em> method.</p>
+<pre><code class="fenced-code-block language-c++">class Shape {
+public:
+    virtual ~Area() {}
+    virtual double Area() const = 0;
+};</code></pre>
+<p>In general a class with only pure virtual methods and a virtual destructor is called an <em>abstract class</em> or <em>interface</em> and is typically named as such (e.g. <code>ButtonInterface</code>, or similar). An interface class guarantees that all extending classes implement a specific method with a specific method signature.</p>
+<h3 class="atx" id="14-special-methods">1.4 Special Methods</h3>
+<h4 class="atx" id="141-constructor-and-destructor">1.4.1 Constructor and Destructor</h4>
+<p>All classes have at least one constructor and a destructor, even if they are not explicitly defined. The constructor and destructor
+assist in managing the lifetime of the object. The constructor is invoked when an object is created and the destructor is invoked
+when an object is destroyed (either by going out of scope or explicitly using <code>delete</code>).</p>
+<p>The constructor establishes a <a href="https://softwareengineering.stackexchange.com/a/32755">class invariant</a>, a set of assertions guaranteed to be true during the lifetime of the object, which is then removed when the destructor is called.</p>
+<h5 class="atx" id="1411-use-of-explicit-in-constructors">1.4.1.1 Use of <code>explicit</code> in Constructors</h5>
+<p>The <code>explicit</code> keyword should be used in single-argument constructors to avoid a situation in which the constructor is implicitly invoked when a single argument is given in place of an object. Consider the following <code>Array</code> class:</p>
+<pre><code class="fenced-code-block language-c++">class Array {
+private:
+    int size;
+
+public:
+    // Constructor
+    Array(int size) {
+        this-&gt;size = size;
+    }
+
+    // Destructor
+    ~Array() {}
+
+    // Print the contents of the array
+    Print(const Array &amp; array) {
+        // ...
+    }
+};</code></pre>
+<p>The following is now legal but ambiguous:</p>
+<pre><code class="fenced-code-block language-c++">Array array = 12345;</code></pre>
+<p>It ends up being the equivalent of this:</p>
+<pre><code class="fenced-code-block language-c++">Array array = Array(12345);</code></pre>
+<p>Perhaps that's okay, but what about the following:</p>
+<pre><code class="fenced-code-block language-c++">array.Print(12345);</code></pre>
+<p>Uh-oh. That's now legal, compileable code, but what does it mean? It is extremely unclear to the user.</p>
+<p>To fix this, declare the single-argument <code>Array</code> constructor as <code>explicit</code>:</p>
+<pre><code class="fenced-code-block language-c++">class Array {
+    int size;
+public:
+    explicit Array(int size) {
+        this-&gt;size = size;
+    }
+
+    // ...
+};</code></pre>
+<p>Now you can only use the print method as follows:</p>
+<pre><code class="fenced-code-block language-c++">array.Print(Array(12345));</code></pre>
+<p>and the previous <code>array.Print(12345)</code> is now a syntax error.</p>
+<h5 class="atx" id="1412-member-initializer-lists">1.4.1.2 Member Initializer Lists</h5>
+<p>Member initializer lists allow you to initialize member variables in the definition of a method. This turns out to provide
+some performance benefits for class-type member variables, since a call to the default constructor is avoided. For POD (plain old data)
+like ints and floats, though, it is the same as initializing them in the body of the method.</p>
+<pre><code class="fenced-code-block language-c++">class Car {
+private:
+    int year;
+    int miles;
+    std::string make;
+
+public:
+    Car(const int year, const int miles, const std::string &amp; make) : year(year), miles(miles), make(make) {}
+};</code></pre>
+<p>Using the initializer list is basically the same as the following more verbose constructor implementation, notwithstanding the note above regarding performance:</p>
+<pre><code class="fenced-code-block language-c++">Car(const int year, const int miles, const std::string &amp; make) {
+    this-&gt;year = year;
+    this-&gt;miles = miles;
+    this-&gt;make = make;
+}</code></pre>
+<p>Since C++11 initializer lists have some added functionality and curly braces <code>{}</code> can be used instead of parentheses <code>()</code> in the
+initializer list, but to maintain compatibility with older compilers you may want to use parentheses. The same applies in general
+to initialization syntax when creating objects. Many people prefer braces, and in some cases it's necessary (e.g. vector containing [100, 1] or a vector of one hundred 1s?), but to support older compilers you may consider using parentheses.</p>
+<h4 class="atx" id="142-new-and-delete">1.4.2 <code>new</code> and <code>delete</code></h4>
+<p>The <code>new</code> and <code>delete</code> operators (and their array counterparts, <code>new[]</code> and <code>delete[]</code>) are operators used to dynamically allocate
+memory for objects, much like C's <code>malloc()</code> and <code>free()</code>.</p>
+<p>More on these operators can be found <a href="https://www.geeksforgeeks.org/new-and-delete-operators-in-cpp-for-dynamic-memory/">here</a>.</p>
+<p>When manually allocating memory dynamically, it is the responsibility of the programmer to manage the memory and properly
+delete objects that have been allocated.</p>
+<h4 class="atx" id="143-copy-constructor-and-copy-assignment">1.4.3 Copy Constructor and Copy Assignment</h4>
+<p>Copy constructors and copy assigment operators allow one object to be constructed or assigned a copy of another object directly:</p>
+<pre><code class="fenced-code-block language-c++">Foo a(10);
+Foo b(a);   // (1): Copy via constructor
+Foo c = a;    // (2): Copy via assignment operator</code></pre>
+<p>This is accomplished by supplying a copy constructor and an assigment operator overload, both of which have a special syntax
+where they accept a const reference to an object of their same type.</p>
+<pre><code class="fenced-code-block language-c++">class Foo {
+private:
+    int data;
+
+public:
+    // Default (no argument) constructor
+    Foo() : data(0) {}
+
+    // Single argument constructor
+    explicit Foo(const int v) : data(v) {}
+
+    // Copy constructor
+    Foo(const Foo &amp; f) : data(f.data) {}
+
+    // Copy assignment operator
+    Foo &amp; operator=(const Foo &amp; f) {
+        data = f.data;
+        return *this;
+    }
+};</code></pre>
+<p>Note that the compiler will always provide a default constructor, a default copy constructor, and a default copy assignment operator, so for simple cases (like this trivial example) you will not have to implement them yourself. More info on this can be found <a href="https://stackoverflow.com/questions/4172722/what-is-the-rule-of-three">here</a>.</p>
+<h4 class="atx" id="144-move-constructor-and-move-assignment">1.4.4 Move Constructor and Move Assignment</h4>
+<p>Sometimes instead of performing a copy you instead wish to completely move data from one object to another. This requires the use
+of a move constructor and move assignement operator.</p>
+<pre><code class="fenced-code-block language-c++">class Movable {
+private:
+    Foo * data_ptr;
+
+public:
+    Movable(Foo data) : data_ptr(new Foo(data)) {}
+
+    // Move constructor
+    Movable(Movable &amp;&amp; m) {
+        // Point to the other object's data
+        data_ptr = m.data_ptr;
+
+        // Remove the other object's data pointer by
+        // setting it to nullptr
+        m.data_ptr = nullptr;
+    }
+
+    // Move assignment operator
+    Movable &amp; operator=(Movable &amp;&amp; m) {
+        data_ptr = m.data_ptr;
+        m.data_ptr = nullptr;
+        return *this;
+    }
+
+    ~Movable() {
+        delete data_ptr;
+    }
+};</code></pre>
+<p>The move constructor and assignment operator can be used as follows:</p>
+<pre><code class="fenced-code-block language-c++">Movable Bar() {
+    // ...
+}
+
+int main() {
+    Movable a(Bar());       // Using the move constructor
+    Movable b = Bar();        // Using the move assignment operator
+}</code></pre>
+<p>Since <code>Bar()</code> creates an object that won't be used elsewhere and is deleted after the call, we can use the move constructor or
+move assignment operator to move the data to our object.</p>
+<p>A programming idiom called <a href="https://stackoverflow.com/questions/3279543/what-is-the-copy-and-swap-idiom">'copy and swap'</a> makes use of the move constructor and can be a useful idiom.</p>
+<h3 class="atx" id="15-operator-overloading">1.5 Operator Overloading</h3>
+<p>Operators such as <code>+</code>, <code>-</code>, <code>*</code>, etc. are familiar and ubiquitous when working with simple data types like integers and floating point
+numbers. These operators as well as others can also be overloaded to provide a clear syntactic meaning to your own classes. For example,
+when working with linear algebra you can overload the <code>+</code> operator to perform an element-wise addition of two vectors. Here's a brief
+example using complex numbers that allows you to use the <code>+</code> and <code>-</code> operators to easily add and subtract two complex numbers.</p>
+<p>There are two main ways to do operator overloading. The first is using normal member functions. The second uses the <code>friend</code> keyword and non-member methods that have access to the private member variables of the class.</p>
+<p>Using normal member functions (requires a getter method for the member variables):</p>
+<pre><code class="fenced-code-block language-c++">// File: complex.h
+
+class Complex {
+private:
+    double r = 0.0; // Real part, defaults to 0.0
+    double i = 0.0; // Imaginary part, defaults to 0.0
+
+public:
+    Complex(const double r, const double i) : r(r), i(i) {}
+
+    // Accessor methods
+    double GetReal(void) const { return r; }
+    double GetImaginary(void) const { return i; }
+
+    // + Operator
+    Complex operator+(const Complex &amp; a, const Complex &amp; b) {
+        return Complex(a.GetReal() + b.GetReal(), a.GetImaginary() + b.GetImaginary());
+    }
+
+    // - Operator
+    Complex operator-(const Complex&amp; a, const Complex&amp; b) {
+        return Complex(a.GetReal() - b.GetReal(), a.GetImaginary() - b.GetImaginary());
+    }
+};</code></pre>
+<p>Using <code>friend</code> methods:</p>
+<pre><code class="fenced-code-block language-c++">// File: complex.h
+
+class Complex {
+private:
+    double r = 0.0; // Real part, defaults to 0.0
+    double i = 0.0; // Imaginary part, defaults to 0.0
+
+public:
+    Complex(const double r, const double i) : r(r), i(i) {}
+
+    // + Operator (declaration only)
+    friend Complex operator+(const Complex &amp; a, const Complex &amp; b);
+
+    // - Operator (declaration only)
+    friend Complex operator-(const Complex&amp; a, const Complex&amp; b);
+};
+
+// These are NOT member functions
+// They can also be defined inside the class body but leaving them outside
+// is a clearer reminder that they are not part of the class
+Complex operator+(const Complex &amp; a, const Complex &amp; b) {
+    return Complex(a.r + b.r, a.i + b.i);
+}
+
+Complex operator-(const Complex&amp; a, const Complex&amp; b) {
+    return Complex(a.r - b.r, a.i - b.i);
+}</code></pre>
+<p>In either case, the new operators can be used as follows:</p>
+<pre><code class="fenced-code-block language-c++">int main() {
+    Complex a(1, 2);    //  1 + 2i
+    Complex b(5, 3);    //  5 + 3i
+
+    Complex c = a + b;    //  6 + 5i
+    Complex d = a - b;    // -4 - 1i
+}</code></pre>
+<p>It's also often useful to overload the output stream operator to provide a custom output string displaying the object's
+internal state in a human-readable format. This is done by overloading the <code>&lt;&lt;</code> operator and requires using the <code>&lt;iostream&gt;</code>
+functionality.</p>
+<pre><code class="fenced-code-block language-c++">#include &lt;iostream&gt;
+
+class Complex {
+private:
+    // ...
+public:
+    // ...
+
+    friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp; os, const Complex &amp; c);
+};
+
+// Definition
+// Again, this is NOT a member function!
+std::ostream &amp; operator&lt;&lt;(std::ostream &amp; os, const Complex &amp; c) {
+    os &lt;&lt; c.r &lt;&lt; " + " &lt;&lt; c.i &lt;&lt; "i";
+    return os;
+}
+
+int main() {
+    Complex a {1, 2};
+    Complex b {5, 3};
+
+    std::cout &lt;&lt; a;     // Prints: 1 + 2i
+    std::cout &lt;&lt; a + b; // Prints: 6 + 5i
+}</code></pre>
+<p>You can also similiarly overload the input stream operator (<code>&gt;&gt;</code>), and can read more about the various operators <a href="http://en.cppreference.com/w/cpp/language/operators">here</a>.</p>
+<h3 class="atx" id="16-templates">1.6 Templates</h3>
+<p>Templates are a very powerful abstraction allowing you to generate compile-time methods/classes/etc. for any number of types while
+writing only one implementation.</p>
+<p>Say you have a method that adds two floating point number together, and another to add two integers together:</p>
+<pre><code class="fenced-code-block language-c++">double Add(const double a, const double b) {
+    return a + b;
+}
+
+int Add(const int a, const int b) {
+    return a + b;
+}</code></pre>
+<p>That's great, but since both floating point numbers and integers implement the <code>+</code> operator you can use a template to instead
+write one generic implementation of a method that can operate on doubles, ints, floats, and (in this case) any other type that
+implements the <code>+</code> operator.</p>
+<p>A simple templatized version of <code>Add</code> would look something like this:</p>
+<pre><code class="fenced-code-block language-c++">template &lt;typename T&gt;   // T becomes whatever type is used at compile-time
+T Add(const T &amp; a, const T &amp; b) {
+    return a + b;   // The type T must support the + operator
+}
+
+// Usages
+int main() {
+    Add&lt;int&gt;(3, 5);            // int version
+    Add&lt;double&gt;(3.2, 5.8);  // double
+    Add(3.45f, 5.0f);        // implicit float version: we leave off the &lt;float&gt; here, since it can deduce the type from the context
+
+    Complex a {1, 2};        // Custom class
+    Complex b {5, 3};
+    Add(a, b);                // Works because we added support for the + operator!
+}</code></pre>
+<p>In this simple example the compiler would generate four different methods, one for each type. Templating allows you to write more
+concise and modular code at the expense of generating a larger executable (code bloat).</p>
+<p>Templates are especially useful to create class templates. Class templates must be completely defined in a single header file.</p>
+<pre><code class="fenced-code-block language-c++">// File: storage.h
+
+template &lt;class T&gt;      // &lt;--- 'class' is synonymous with 'typename'
+class Container {
+private:
+    T data;
+public:
+    explicit Container(const T &amp; d) : data(d) {}
+};
+
+// Usage
+int main() {
+    Container&lt;int&gt; a(1);
+    Container&lt;float&gt; b(10.0f);
+    Container&lt;Container&lt;int&gt;&gt; c(a);
+}</code></pre>
+<blockquote>
+<p>NOTE: More coming soon on templates...</p>
+</blockquote>
+<p>Read more about templates <a href="https://www.geeksforgeeks.org/templates-cpp/">here</a> and <a href="http://en.cppreference.com/w/cpp/language/templates">here</a>.</p>
+<h2 class="atx" id="20-general-c-syntax">2.0 General C++ Syntax</h2>
+<h3 class="atx" id="21-namespaces">2.1 Namespaces</h3>
+<p>In a large production project you may have thousands of symbols for various types, variables, methods, and so on. To avoid symbol names conflicting
+with one another you can use namespaces to logically separate symbol names in to broad categories. Namespaces are an inherent feature of C++; when you
+create a class and refer to a method as <code>ClassName::Method()</code> you are essentially using a namespace feature intrinsic to classes.</p>
+<p>For a brief namespace example, suppose that you have two data structures, both of which implement a <code>Node</code> class. In the following code, namespaces
+are used to allow the compiler (and the programmer) to distinguish between the two types.</p>
+<pre><code class="fenced-code-block language-c++">// File: list.h
+
+namespace list {
+
+template &lt;typename T&gt;
+struct Node {
+    Node * next;
+    Node * prev;
+    T data;
+};
+
+}; // namespace</code></pre>
+<pre><code class="fenced-code-block language-c++">// File: bst.h
+
+namespace bst {
+
+template &lt;typename T&gt;
+struct Node {
+    Node * left;
+    Node * right;
+    T data;
+};
+
+}; // namespace</code></pre>
+<pre><code class="fenced-code-block language-c++">// File: main.cpp
+#include "list.h"
+#include "bst.h"
+
+int main() {
+    list::Node&lt;int&gt; a;
+    bst::Node&lt;int&gt; b;
+};</code></pre>
+<p>The standard C++ library uses the namespace <code>std</code>, e.g. <code>std::cout</code>, <code>std::string</code>, <code>std::endl</code>, etc. While you can use a <code>using namespace foo;</code> directive to address
+symbols directly in the <code>foo</code> namespace without prefixing the <code>foo::</code> qualifier, this is generally considered bad practice as it pollutes the global namespace and
+sort of undermines the point of using namespaces in the first place.</p>
+<pre><code class="fenced-code-block language-c++">#include &lt;iostream&gt;
+using namespace std;
+
+cout &lt;&lt; "Hello, World" &lt;&lt; endl;             // &lt;--- BAD: pollutes the global namespace</code></pre>
+<pre><code class="fenced-code-block language-c++">#include &lt;iostream&gt;
+
+std::cout &lt;&lt; "Hello, World" &lt;&lt; std::endl;   // &lt;--- GOOD: It's clear that you're using symbols from the standard namespace</code></pre>
+<h3 class="atx" id="22-references-and-pointers">2.2 References and Pointers</h3>
+<p>Those familiar with C will be very intimately acquainted with pointers. C++ adds the concept of references, which is a powerful way to have <em>some</em> of the features of
+pointers while avoiding some of the pitfalls. Later versions of C++ also add <a href="https://docs.microsoft.com/en-us/cpp/cpp/smart-pointers-modern-cpp?view=vs-2019">smart pointers</a>,
+which allow for better memory management and scoping via <code>std::unique_ptr</code>, <code>std::shared_ptr</code>, and <code>std::weak_ptr</code>, as compared to traditional raw pointers.</p>
+<p>Raw pointers in C++ behave exactly the same way as they do in C: a pointer variable stores the address of whatever it is pointing to. You can think of pointers as
+essentially storing a link to another piece of data. You can access the data that the pointer points to with the <code>-&gt;</code> operator, or dereference it with the <code>*</code> operator.</p>
+<p>References are more akin to an alias. References cannot be <code>NULL</code> or <code>nullptr</code>, and references cannot be reassigned to reference something else after they have been created.
+Additionally, references do not take up extra memory; they share the same address as whatever they reference to. References cannot have multiple levels of indirection (pointers can),
+and there is no reference arithmetic like there is for pointers. You can access the underlying data of a reference directly by using the reference itself: that is, if it's a reference
+to an integer it can be used as an integer. If it's a reference to a class you can access the class members directly with the <code>.</code> operator.</p>
+<p>Although pointers are incredibly powerful, references are generally much safer, especially when passing objects to methods using pass-by-reference. It is very common in
+C++ code to pass an object as a <code>const</code> reference (if the data should be unmutable within the method) or a non-const reference rather than a raw pointer as is required in C.</p>
+<p>More on <a href="https://stackoverflow.com/a/57492">references vs pointers here</a>.</p>
+<p>In the following code, assume a 32-bit system, in which case the size of a pointer variable is 4 bytes, and that the stack grows towards higher memory addresses.</p>
+<pre><code class="fenced-code-block language-c++">// Pointers
+int a = 10;                     // Ends up at memory address '0x2A000084', for example
+int b = 20;                     // Ends up at memory address '0x2A000088'
+
+int * ptr = nullptr;            // ptr is a separate variable whose type is 'pointer to int' and whose value has been initialized to '0x00000000'
+printf("ptr = %p\n");           // Prints: 0x0
+
+ptr = &amp;a;                       // The value of ptr is now the address of the variable 'a'
+std::cout &lt;&lt; p &lt;&lt; std::endl;    // Prints: 0x2a000084
+std::cout &lt;&lt; *p &lt;&lt; std::endl;   // Prints: 10
+
+ptr = &amp;b;                       // The value of ptr is now the address of the variable 'b'
+std::cout &lt;&lt; p &lt;&lt; std::endl;    // Prints: 0x2a000088
+std::cout &lt;&lt; *p &lt;&lt; std::endl;   // Prints: 20</code></pre>
+<pre><code class="fenced-code-block language-c++">// References
+int a = 10;                         // Ends up at memory address '0x2A000084', for example
+int b = 20;                         // Ends up at memory address '0x2A000088'
+
+int &amp; ref_a = a;                    // ref_a is an alias of (reference to) the variable a
+int &amp; ref_b = b;                    // ref_b is an alias of (reference to) the variable b
+
+std::cout &lt;&lt; ref_a &lt;&lt; std::endl;    // Prints: 10
+std::cout &lt;&lt; ref_b &lt;&lt; std::endl;    // Prints: 20
+
+std::cout &lt;&lt; &amp;ref_a &lt;&lt; std::endl;   // Prints: 0x2a000084
+std::cout &lt;&lt; &amp;ref_b &lt;&lt; std::endl;   // Prints: 0x2a000088
+
+ref_a = b;                          // SETS THE VALUE OF 'a' TO THE VALUE OF 'b'!
+
+std::cout &lt;&lt; ref_a &lt;&lt; std::endl;    // Prints: 20
+std::cout &lt;&lt; a &lt;&lt; std::endl;        // ALSO PRINTS: 20 !
+
+int &amp; ref_c;                        // ERROR! References must be initialized at their declaration</code></pre>
+<p>Perhaps the most widely used aspect of references is to pass objects by reference (sometimes constant reference) to a method. To avoid hammering the stack with
+large objects when you pass them by value it is nearly always preferrable to pass by reference, which is the term used when using either a reference <em>or</em> a pointer.
+Using a reference allows you to pass any size object by reference, while still allowing you to access the object directly.</p>
+<pre><code class="fenced-code-block language-c++">// Pass by reference using a const reference
+void Foo(const Bar &amp; bar) {
+    int a = bar.GetValue();
+
+    if (bar.SomeMethod()) {
+        // ...
+    }
+
+    bar.SetValue(10);   // ERROR! Cannot modify a const reference!
+}
+
+// Pass by reference using a non-const reference
+void Foo(Bar &amp; bar) {
+    int a = bar.GetValue();
+
+    if (bar.SomeMethod()) {
+        // ...
+    }
+
+    bar.SetValue(10);   // Modifies 'bar' and thus whatever 'bar' references
+}</code></pre>
+<p>By passing an object by reference using a reference instead of a pointer you:</p>
+<ul>
+<li>Don't need to check for <code>NULL</code> or <code>nullptr</code> since references cannot be null</li>
+<li>Can access the referenced object's data directly instead of using the <code>-&gt;</code> operator or dereferencing a pointer</li>
+<li>Make it clearer which parameters are meant to be <em>input</em> parameters and which are meant to be <em>output</em> parameters by using
+<code>const</code> to denote strictly input parameters</li>
+<li>Gain the benefits of both passing by value and passing by reference since you don't need to use a lot of memory on the stack for your object</li>
+</ul>
+<p>Thus, passing by reference using a <code>const</code> reference is essentially the same as passing by value, but you avoid copying the object onto the stack. Passing by reference
+using a non-const reference is essentially the same as passing by reference using a pointer, but you are guaranteed that it is not null and it's as if the pointer
+is effectively dereferenced.</p>
+<h3 class="atx" id="23-keywords">2.3 Keywords</h3>
+<p><a href="http://en.cppreference.com/w/cpp/keyword">Reference</a></p>
+<h4 class="atx" id="231-general-keywords">2.3.1 General Keywords</h4>
+<p><a href="http://en.cppreference.com/w/cpp/language/asm"><code>asm</code></a>
+<a href="http://en.cppreference.com/w/cpp/language/auto"><code>auto</code></a>
+<a href="http://en.cppreference.com/w/cpp/language/cv"><code>const</code></a>
+<a href="http://en.cppreference.com/w/cpp/language/constexpr"><code>constexpr</code> (<em>since C++11</em>)</a>
+<a href="http://en.cppreference.com/w/cpp/language/explicit"><code>explicit</code></a>
+<a href="http://en.cppreference.com/w/cpp/keyword/export"><code>export</code> (<em>until C++11</em>)</a>
+<a href="http://en.cppreference.com/w/cpp/language/language_linkage"><code>extern</code> (<em>language linkage</em>)</a>
+<a href="http://en.cppreference.com/w/cpp/language/friend"><code>friend</code></a>
+<a href="http://en.cppreference.com/w/cpp/language/inline"><code>inline</code></a>
+<a href="http://en.cppreference.com/w/cpp/language/cv"><code>mutable</code></a>
+<a href="http://en.cppreference.com/w/cpp/language/noexcept"><code>noexcept</code> (<em>operator</em>)</a>
+<a href="http://en.cppreference.com/w/cpp/language/noexcept_spec"><code>noexcept</code> (<em>function specifier</em>)</a>
+<a href="http://en.cppreference.com/w/cpp/language/nullptr"><code>nullptr</code></a>
+<a href="http://en.cppreference.com/w/cpp/language/override"><code>override</code></a>
+<a href="http://en.cppreference.com/w/cpp/language/static"><code>static</code> (<em>class member specifier</em>)</a>
+<a href="http://en.cppreference.com/w/cpp/language/templates"><code>template</code></a>
+<a href="http://en.cppreference.com/w/cpp/language/this"><code>this</code></a>
+<a href="http://en.cppreference.com/w/cpp/language/virtual"><code>virtual</code> (<em>function specifier</em>)</a>
+<a href="http://en.cppreference.com/w/cpp/language/derived_class"><code>virtual</code> (<em>base class specifier</em>)</a>
+<a href="http://en.cppreference.com/w/cpp/language/cv"><code>volatile</code></a></p>
+<h4 class="atx" id="232-storage-class-specifiers">2.3.2 Storage Class Specifiers</h4>
+<p><a href="http://en.cppreference.com/w/cpp/language/storage_duration">Reference</a></p>
+<ul>
+<li><code>auto</code> (<em>until C++11</em>)</li>
+<li><code>register</code> (<em>until C++17</em>)</li>
+<li><code>static</code></li>
+<li><code>extern</code></li>
+<li><code>thread_local</code> (<em>since C++11</em>)</li>
+</ul>
+<h4 class="atx" id="233-const-and-dynamic-cast-conversion">2.3.3 <code>const</code> and <code>dynamic</code> Cast Conversion</h4>
+<ul>
+<li><a href="http://en.cppreference.com/w/cpp/language/const_cast"><code>const_cast</code></a></li>
+<li><a href="http://en.cppreference.com/w/cpp/language/dynamic_cast"><code>dynamic_cast</code></a></li>
+</ul>
+<h3 class="atx" id="24-preprocessor-tokens">2.4 Preprocessor Tokens</h3>
+<ul>
+<li><code>#if</code>: Preprocessor version of <code>if(...)</code></li>
+<li><code>#elif</code>: Preprocessor version of <code>else if(...)</code></li>
+<li><code>#else</code>: Preprocessor version of <code>else</code></li>
+<li><code>#endif</code>: Used to end an <code>#if</code>, <code>#ifdef</code>, or <code>#ifndef</code></li>
+<li><code>defined()</code>: Returns true if the macro is defined</li>
+<li><code>#ifdef</code>: Same as <code>#if defined(...)</code></li>
+<li><code>#ifndef</code>: Same as <code>#if !defined(...)</code></li>
+<li><code>#define</code>: Defines a text macro. See <a href="http://en.cppreference.com/w/cpp/preprocessor/replace">here</a> for full explanation, including macro functions and predefined macros.</li>
+<li><code>#undef</code>: Un-defines a text macro</li>
+<li><code>#include</code>: Includes a source file</li>
+<li><code>#line</code>: Changes the current file name and line number in the preprocessor</li>
+<li><code>#error</code>: Prints an error message and stops compilation</li>
+<li><code>#pragma</code>: Non-standard, can be used instead of header guards (<code>#ifndef HEADER_H</code> ...)</li>
+</ul>
+<h3 class="atx" id="25-strings-stdstring">2.5 Strings (<code>std::string</code>)</h3>
+<p><a href="http://en.cppreference.com/w/cpp/string/basic_string">Reference</a></p>
+<h3 class="atx" id="26-iterators-stditeratorltgt">2.6 Iterators (<code>std::iterator&lt;...&gt;</code>)</h3>
+<p><a href="http://en.cppreference.com/w/cpp/concept/Iterator">Reference</a></p>
+<h3 class="atx" id="27-exceptions">2.7 Exceptions</h3>
+<p><a href="http://en.cppreference.com/w/cpp/error/exception">Reference</a></p>
+<h3 class="atx" id="28-lambdas">2.8 Lambdas</h3>
+<p><a href="https://en.cppreference.com/w/cpp/language/lambda">Reference</a></p>
+</article>
+</body>
+</html>
